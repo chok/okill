@@ -6,7 +6,7 @@ HUMAN_CMD='ps aux'
 SIGNAL=-9
 
 help() {
-  echo "Usage: okill {list|kill} process"
+  echo "Usage: okill process [k]"
 }
 
 list() {
@@ -38,18 +38,24 @@ okill() {
   echo "${NB_PROCESS} processus tués"
 }
 
+cmd=$2
+
+if [ "$1" = "help" ]
+then
+  cmd="help"
+fi
 
 
-case "$1" in
-  list)
-        list $2
+case "$cmd" in
+  help)
+        help
+	exit 1
         ;;
-  kill)
-        okill $2
+  k)
+        okill $1
         ;;
   *)
-        help
-        exit 1
+        list $1
         ;;
 esac
 
