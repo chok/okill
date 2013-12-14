@@ -1,16 +1,18 @@
 okill
 =====
 
-Over Kill
+`Over Kill` 
 
 Installation
 ------------
 
 ```bash
 # as root
-root@mad:~$ curl https://raw.github.com/chok/okill/master/okill.sh -O /usr/bin/okill && chmod 755 /usr/bin/okill
+root@mad:~$ curl -o /usr/bin/okill https://raw.github.com/chok/okill/master/okill.sh; \
+chmod 755 /usr/bin/okill
 # Or
-man@mad:~$ sudo curl https://raw.github.com/chok/okill/master/okill.sh -O /usr/bin/okill && chmod 755 /usr/bin/okill
+man@mad:~$ sudo curl -o /usr/bin/okill https://raw.github.com/chok/okill/master/okill.sh; \
+sudo chmod 755 /usr/bin/okill
 ```
 
 
