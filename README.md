@@ -8,10 +8,10 @@ Installation
 
 ```bash
 # as root
-root@mad:~$ curl -o /usr/bin/okill https://raw.github.com/chok/okill/master/okill.sh; \
+root@mad:~$ curl -o /usr/bin/okill https://raw.githubusercontent.com/chok/okill/master/okill.sh; \
 chmod 755 /usr/bin/okill
 # Or
-man@mad:~$ sudo curl -o /usr/bin/okill https://raw.github.com/chok/okill/master/okill.sh; \
+man@mad:~$ sudo curl -o /usr/bin/okill https://raw.githubusercontent.com/chok/okill/master/okill.sh; \
 sudo chmod 755 /usr/bin/okill
 ```
 
